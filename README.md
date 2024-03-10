@@ -2,6 +2,8 @@
 
 Use game controller (PlayStation or XBox controller) control MacOS.
 
+<img src="Images/mainmenu.png">
+
 ## Usage
 
 1. Open this application, grant required permissions.
