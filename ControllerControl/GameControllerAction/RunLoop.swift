@@ -88,7 +88,7 @@ func workerRunLoop() {
         }
         
         controller.extendedGamepad?.buttonB.valueChangedHandler = { button, value, pressed in
-            print("rightTrigger state: \(pressed)")
+            print("button B state: \(pressed)")
             if pressed {
                 mouse_action_here(event_type: .rightMouseDown)
             }
@@ -96,6 +96,7 @@ func workerRunLoop() {
                 mouse_action_here(event_type: .rightMouseUp)
             }
         }
+    
         
         controller.extendedGamepad?.rightShoulder.valueChangedHandler = { button, value, pressed in
             print("rightTrigger state: \(pressed)")
@@ -216,6 +217,19 @@ func workerRunLoop() {
             }
             else {
                 simulateArrowKey(key: 59, keyDown: false)
+                control_key_pressed = false
+            }
+        }
+        
+        controller.extendedGamepad?.buttonX.valueChangedHandler = { button, value, pressed in
+            print("button X state: \(pressed)")
+            if pressed {
+                // 模拟按下和释放eNTER键
+                simulateArrowKey(key: 0x24, keyDown: true)
+                control_key_pressed = true
+            }
+            else {
+                simulateArrowKey(key: 0x24, keyDown: false)
                 control_key_pressed = false
             }
         }
