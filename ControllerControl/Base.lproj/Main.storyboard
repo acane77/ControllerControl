@@ -681,17 +681,10 @@
                 </customObject>
                 <menu id="L24-LR-kMo">
                     <items>
-                        <menuItem title="Settings..." id="1Sa-OE-FpK">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem isSeparatorItem="YES" id="QNl-vg-Fg1"/>
                         <menuItem title="No Connected Controller" id="L0E-5g-vWz">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="D7a-D0-MzO"/>
-                        <menuItem title="About Controller Control" id="Aru-Rn-fBb">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
                         <menuItem title="Quit Controller Control" id="9hH-xO-Wff">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
