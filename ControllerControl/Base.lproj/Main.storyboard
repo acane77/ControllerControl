@@ -676,18 +676,27 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ControllerControl" customModuleProvider="target">
                     <connections>
                         <outlet property="main_menu" destination="L24-LR-kMo" id="VKl-7c-brg"/>
+                        <outlet property="main_menuitem_connect_status" destination="L0E-5g-vWz" id="qlg-hf-XCQ"/>
                     </connections>
                 </customObject>
                 <menu id="L24-LR-kMo">
                     <items>
-                        <menuItem title="Item 1" id="1Sa-OE-FpK">
+                        <menuItem title="Settings..." id="1Sa-OE-FpK">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
-                        <menuItem title="Item 2" id="Aru-Rn-fBb">
+                        <menuItem isSeparatorItem="YES" id="QNl-vg-Fg1"/>
+                        <menuItem title="No Connected Controller" id="L0E-5g-vWz">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
-                        <menuItem title="Item 3" id="9hH-xO-Wff">
+                        <menuItem isSeparatorItem="YES" id="D7a-D0-MzO"/>
+                        <menuItem title="About Controller Control" id="Aru-Rn-fBb">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Quit Controller Control" id="9hH-xO-Wff">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="menuItemQuitClick:" target="Voe-Tx-rLC" id="UwV-2d-dcy"/>
+                            </connections>
                         </menuItem>
                     </items>
                 </menu>

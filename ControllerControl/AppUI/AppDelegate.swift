@@ -13,9 +13,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // MenuBar Icon
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
+    // Menu
     @IBOutlet weak var main_menu: NSMenu!
+    // Menu -> No Connected Controller
+    //         It will show controller name if connected
+    @IBOutlet weak var main_menuitem_connect_status: NSMenuItem!
     
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         if let menubar_button = statusItem.button {
@@ -39,6 +42,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func mouseClickHandler() {
         statusItem.menu = main_menu
         statusItem.button?.performClick(nil)
+    }
+    @IBAction func menuItemQuitClick(_ sender: Any) {
+        NSApplication.shared.terminate(self)
     }
 }
 
